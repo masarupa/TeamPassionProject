@@ -1,5 +1,5 @@
 ## Triangulate
-A fullstack web app that triangulates the most convenient meeting point between people. 
+A fullstack web app that triangulates the most convenient meeting point between people.  The problem we are solving relates to the fact that the central meeting point between two locations using mass transit in major cities does not necessarily bear a close relationship to the geographical middle point between those locations.  This app calculates the most convenient meeting point using the realities of the transit system, which is often counterintuitive.
 
 ## Built with
 
