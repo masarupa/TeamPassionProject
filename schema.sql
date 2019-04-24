@@ -9,7 +9,7 @@ CREATE TABLE nycTransitHubs
     id INTEGER(11)
     AUTO_INCREMENT NOT NULL PRIMARY KEY,
 name VARCHAR
-    (35) NOT NULL,
+    (35) NOT NULL
 );
 
     INSERT INTO nycTransitHubs
