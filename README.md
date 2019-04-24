@@ -16,7 +16,7 @@ $ node server.js
 ```
 
 ## Authors
-Meron Langsner, Mike Barbone, Stella Jenn Kim, Desmond Hamilton Jr
+Meron Langsner, Sze Wah Leong, Mike Barbone, Stella Jenn Kim, Desmond Hamilton Jr
 
 ## Acknowledgements
 Thanks to the instructors and teaching assistants at Columbia Univeristy Coding Bootcamp.
