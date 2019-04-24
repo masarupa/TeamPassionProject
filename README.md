@@ -10,7 +10,7 @@ A fullstack web app that triangulates the most convenient meeting point between 
 ## Installation
 
 ```
-$ cd ../TeamPassonProject
+$ cd ../TeamPassionProject
 $ npm install
 $ node server.js
 ```
