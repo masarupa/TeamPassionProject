@@ -4,8 +4,8 @@ A fullstack web app that triangulates the most convenient meeting point between 
 ## Built with
 
 - Javascript, HTML, CSS, Javascript, MySQL, Node, Express, Sequelize
-- Heroku app link: 
-- Github page link: 
+- Heroku app link: https://git.heroku.com/mysterious-depths-55029.git
+- Github page link: https://meronlangsner.github.io/TeamPassionProject/
 
 ## Installation
 
