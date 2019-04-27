@@ -5,7 +5,7 @@ A fullstack web app that triangulates the most convenient meeting point between 
 
 - Javascript, HTML, CSS, Javascript, MySQL, Node, Express, Sequelize
 - Heroku app link: 
-- Github page link: 
+- Github page link: https://meronlangsner.github.io/TeamPassionProject/
 
 ## Installation
 
