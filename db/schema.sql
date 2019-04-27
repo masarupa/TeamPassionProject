@@ -25,7 +25,7 @@ CREATE TABLE Users
     UserName VARCHAR
 (35) NOT NULL PRIMARY KEY,
     email VARCHAR(45) NOT NULL,
-    address VARCHAR
+    userAddress VARCHAR
 (100) NOT NULL,
     lat DECIMAL
 (13, 10),
