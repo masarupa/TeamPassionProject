@@ -1,0 +1,136 @@
+/* CORE STYLES */
+:root {
+  --primary-color: rgba(13, 110, 139, 0.75);
+  --overlay-color: rgba(24, 39, 51 , 0.85);
+  --menu-speed: 0.75s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4;
+}
+
+.home {
+  height: 100vh;
+  
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 3rem;
+}
+
+.showcase {
+background: rgba(24, 39, 51 , 0.85);
+  color: #fff;
+  height: 100vh;
+  position: relative;
+}
+
+.showcase:before {
+  content: '';
+  background: url('../img/Location-Based-Services.jpg') no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.showcase .showcase-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.showcase h1 {
+  font-size: 4rem;
+}
+
+.showcase p {
+  font-size: 1.3rem;
+}
+/* landing page button starts here */
+.btn {
+  display: inline-block;
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  transition: opacity 1s ease-in-out;
+   border-radius: 15px;
+  text-decoration: none;
+}  
+
+.btn:hover {
+  opacity: 0.7;
+}/* landing page button ends here */
+/* Landing page ends here */
+
+/* About page starts here */
+.about{
+  height: 100vh;
+}/* About page ends here */
+
+
+
+/* team page css starts here */
+.team {
+  height: 100vh;
+  background: #262626;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+.swiper-container {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 380px;
+  background: #fff;
+}
+.swiper-slide .imgBx {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+.swiper-slide .imgBx img {
+  width: 100%;
+}
+.swiper-slide .details {
+     box-sizing: border-box;
+     font-size: 20px;
+     padding: 20px;
+}
+.swiper-slide .details h3{
+     margin: 0;
+     padding: 0;
+     font-size: 20px;
+     text-align: center;
+}
+
+.swiper-slide .details h3 span{
+     font-size: 20px;
+     color: blueviolet;
+}
+
+/* contact page starts here */
+.contact{
+  height: 100vh;
+}/* contact page starts here */
