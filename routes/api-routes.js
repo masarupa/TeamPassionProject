@@ -1,4 +1,4 @@
-var  = require("");
+var path = require("path");
 
 // ROUTING
 
@@ -7,28 +7,32 @@ module.exports = function(app) {
   // Below code handles when users "visit" a page.
   // In each of the below cases when a user visits a link
  
-  app.get("", function(req, res) {
+  app.get("/api/address", function(req, res) {
     res.json(userAddress);
   });
 
-  app.post("", function(req, res) {
-   
-    var bestLocation = {
-      name: "HubName"
-    };
-
-    var UserName = req.body;
-
-    var totalDifference;
-
-    // Here we loop through all the friend possibilities in the database.
-    for (var i = 0; i < distance.length; i++) {
-      totalDifference = 0;
-
-      console.log();
-
-      for (var j = 0; j < X; j++) {
-    
-      }
+  app.post("/api/login", (req, res) => {
+    console.log(req.body);
   });
+
+  // app.post("/api/bestHub", function(req, res) {
+   
+  //   var bestLocation = {
+  //     name: "HubName"
+  //   };
+
+  //   var UserName = req.body;
+
+  //   var totalDifference;
+
+  //   // Here we loop through all the friend possibilities in the database.
+  //   for (var i = 0; i < distance.length; i++) {
+  //     totalDifference = 0;
+
+  //     console.log();
+
+  //     for (var j = 0; j < X; j++) {
+    
+  //     }
+  // });
 };
