@@ -1,34 +1,4 @@
 {
-<<<<<<< HEAD
-    "name": "teampassionproject-master",
-    "version": "1.0.0",
-    "description": "project_2 web app Triangulate",
-    "main": "server.js",
-    "scripts": {
-        "test": "node server.js",
-        "start": "node server.js"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/MeronLangsner/TeamPassionProject.git"
-    },
-    "keywords": [
-        "fullstack",
-        "web",
-        "app"
-    ],
-    "author": "team passion",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/MeronLangsner/TeamPassionProject/issues"
-    },
-    "homepage": "https://github.com/MeronLangsner/TeamPassionProject#readme",
-    "dependencies": {
-        "express": "^4.16.4",
-        "mysql2": "^1.6.5",
-        "sequelize": "^5.7.5"
-    }
-=======
   "name": "teampassionproject-master",
   "version": "1.0.0",
   "description": "project_2 web app Triangulate",
@@ -62,5 +32,4 @@
     "sequelize": "^5.7.5"
   },
   "devDependencies": {}
->>>>>>> aaddf5116914560ba8e3cafbce7e01bd4512ce96
 }
