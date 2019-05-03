@@ -10,7 +10,8 @@ module.exports = function(app) {
  
 
     app.get("/", function(req, res) {
-      res.json(userAddress);
+      var UserName;
+      res.json(UserName);
     });
 
     app.post("", function(req, res) {
