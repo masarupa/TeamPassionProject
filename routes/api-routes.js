@@ -1,4 +1,5 @@
-// var  = require("");
+var path = require("path");
+
 
 // ROUTING
 
@@ -7,6 +8,7 @@ module.exports = function(app) {
   // Below code handles when users "visit" a page.
   // In each of the below cases when a user visits a link
  
+
     app.get("/", function(req, res) {
       res.json(userAddress);
     });
@@ -30,5 +32,6 @@ module.exports = function(app) {
         for (var j = 0; j < X; j++) {
           console.log("")
         }
-    })
+      }
+});
 }

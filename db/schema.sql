@@ -4,6 +4,8 @@ CREATE DATABASE nycTransitHubs_db;
 
 USE nycTransitHubs_db;
 
+USE jawsDBname;
+
 CREATE TABLE nycTransitHubs
 (
     HubName VARCHAR

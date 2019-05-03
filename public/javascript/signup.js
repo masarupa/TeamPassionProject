@@ -1,3 +1,6 @@
+
+
+
 $(document).ready(function() {
   $("#signup_btn").click(function() {
     $("#main").animate({ left: "22.5%" }, 400);
@@ -21,4 +24,19 @@ $(document).ready(function() {
     $("#loginform").animate({ left: "70%" }, 500);
     $("#loginform").css("visibility", "visible");
   });
+    $("#loginform").submit((e) => {
+      e.preventDefault();
+      var formData = $("#loginform").serialize();
+      axios({
+        method: "post",
+        url: "/api/login",
+        data: formData
+      })
+      .then((response) => {
+        console.log(response);
+      })
+      .catch((error) => {
+        console.log(error);
+      })
+    });
 });
