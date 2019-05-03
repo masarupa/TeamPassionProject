@@ -1,5 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const db = require("./models");
+
 
 const exphbs = require("express-handlebars");
 
@@ -19,6 +21,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 //   console.log(req.body);
 //   res.status(200).send();
 // });
+
 require("./routes/html-routes.js")(app);
 require("./routes/api-routes.js")(app);
-app.listen(PORT, () => console.log("App listening on port ", PORT));
+db.sequelize.sync().then(function(){
+     app.listen(PORT, () =>{ console.log("App listening on port ", PORT)});
+});
+
