@@ -1,7 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 
-const exphbs = require("express-handlebars");
+// const exphbs = require("express-handlebars");
 
 const app = express();
 
@@ -16,7 +16,7 @@ app.get("/", async (req, res) => {
   res.render("index");
 });
 app.post("/hubs", async (req, res) => {
-  console.log(req.body);
+  console.log(req.body);    
   res.status(200).send();
 });
 

@@ -32,3 +32,4 @@ CREATE TABLE Users
     long DECIMAL
 (13, 10)
 );
+

@@ -2,158 +2,166 @@
 <html lang="en">
 
 <head>
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/profile.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Profile</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/example.css">
+    <link href="https://fonts.googleapis.com/css?family=Nixie+One|Quicksand" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
-<div class="container emp-profile">
-    <form method="post">
+
+<body>
+    <div class="row" id="1">
+
+        <div class="col s12 m3">
+
+            <div class="card-panel  grey lighten-4" id="profile-photo-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfTWHiMbUN7SF_yUHU202YzXr2x1Mv_2k6rlNktgnL-rpJlK6W"
+                    alt="profile photo" width="100" height="auto">
+                <h4>User</h4>
+                <h2>John Doe</h2>
+                <p>Address</p>
+                <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                        <i class="material-icons right">send</i>
+                      </button>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+
+            <div class="card-panel grey lighten-5" id="friends-photo-box">
+
+
+                <i class="material-icons"></i>
+
+                <!-- <h4><span class="friends">Friends</span><i class="material-icons">person_add</i></h4> -->
+                <h4>Friends<i class="material-icons friends">person_add</i></h4>
+                <ul>
+                    <li><a href="https://google.com" target="_blank">
+                            <i class="medium material-icons">account_circle</i></a></li>
+                    <li><a href="https://google.com" target="_blank">
+                            <i class="medium material-icons">account_circle</i></a></li>
+                    <li><a href="https://google.com" target="_blank">
+                            <i class="medium material-icons">account_circle</i></a></li>
+                    <li><a href="https://google.com" target="_blank">
+                            <i class="medium material-icons">account_circle</i></a></li>
+                    <li><a href="https://google.com" target="_blank">
+                            <i class="medium material-icons">account_circle</i></a></li>
+                    <li><a href="https://google.com" target="_blank">
+                            <i class="medium material-icons">account_circle</i></a></li>
+                    
+                </ul>
+            </div>
+
+            <!-- -->
+            <ul class="collection">
+                <li class="collection-item avatar">
+                    <img src="images/yuna.jpg" alt="" class="circle">
+                    <span class="title">Title</span>
+                    <p>First Line <br>
+                        Second Line
+                    </p>
+                    <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                </li>
+                <li class="collection-item avatar">
+                    <i class="material-icons circle">folder</i>
+                    <span class="title">Title</span>
+                    <p>First Line <br>
+                        Second Line
+                    </p>
+                    <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                </li>
+                <li class="collection-item avatar">
+                    <i class="material-icons circle green">insert_chart</i>
+                    <span class="title">Title</span>
+                    <p>First Line <br>
+                        Second Line
+                    </p>
+                    <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                </li>
+                <li class="collection-item avatar">
+                    <i class="material-icons circle red">play_arrow</i>
+                    <span class="title">Title</span>
+                    <p>First Line <br>
+                        Second Line
+                    </p>
+                    <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                </li>
+            </ul>
+
+
+
+
+
+
+        </div>
+
         <div class="row">
-            <div class="col-md-4">
-                <div class="profile-img">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS52y5aInsxSm31CvHOFHWujqUx_wWTS9iM6s7BAm21oEN_RiGoog"
-                        alt="" />
-                    <div class="file btn btn-lg btn-primary">
-                        Change Photo
-                        <input type="file" name="file" />
-                    </div>
+            
+                <form class="col s12 m9">
+            
+            <div class="row">
+                <div class="input-field col s6">
+                    <i class="material-icons prefix">person_pin</i>
+                    <input id="icon_prefix" type="text" class="validate">
+                    <label for="icon_prefix">My Location</label>
+                </div>
+                <div class="input-field col s6">
+                    <i class="material-icons prefix">person_pin</i>
+                    <input id="icon_telephone" type="tel" class="validate">
+                    <label for="icon_telephone">Friend Location</label>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="profile-head">
-                    <h5>
-                        John Doe
-                    </h5>
-                    <h6>
-                        Location
-                    </h6>
-                    <p class="proile-rating">RANKINGS : <span>8/10</span></p>
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
-                        <li class="nav-item">
-                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
-                                aria-controls="home" aria-selected="true">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
-                                aria-controls="profile" aria-selected="false">Timeline</a>
-                        </li>
+            </form>
+
+        <!-- <div class="col s12 m9">
+            <div class="card">
+                <div class="card-tabs">
+                    <ul class="tabs tabs-fixed-width">
+                        <li class="tab"><a href="#test4">Message</a></li>
+                        <li class="tab"><a class="active" href="#test5">Test 2</a></li>
+                        <li class="tab"><a href="#test6">Test 3</a></li>
                     </ul>
                 </div>
-            </div>
-            <div class="col-md-2">
-                <input type="submit" class="profile-edit-btn" name="btnAddMore" value="Edit Profile" />
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="profile-work">
-                    <p>WORK LINK</p>
-                    <a href="">Website Link</a><br />
-                    <a href="">Bootsnipp Profile</a><br />
-                    <a href="">Bootply Profile</a>
-                    <p>SKILLS</p>
-                    <a href="">Web Designer</a><br />
-                    <a href="">Web Developer</a><br />
-                    <a href="">WordPress</a><br />
-                    <a href="">WooCommerce</a><br />
-                    <a href="">PHP, .Net</a><br />
+                <div class="card-content grey lighten-5">
+                    <div id="test4">Test 1</div>
+                    <div id="test5">Test 2</div>
+                  
                 </div>
-            </div>
-            <div class="col-md-8">
-                <div class="tab-content profile-tab" id="myTabContent">
-                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <label>User Id</label>
-                            </div>
-                            <div class="col-md-6">
-                                <p>Kshiti123</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <label>Name</label>
-                            </div>
-                            <div class="col-md-6">
-                                <p>Kshiti Ghelani</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <label>Email</label>
-                            </div>
-                            <div class="col-md-6">
-                                <p>kshitighelani@gmail.com</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <label>Phone</label>
-                            </div>
-                            <div class="col-md-6">
-                                <p>123 456 7890</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <label>Profession</label>
-                            </div>
-                            <div class="col-md-6">
-                                <p>Web Developer and Designer</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <label>Experience</label>
-                            </div>
-                            <div class="col-md-6">
-                                <p>Expert</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <label>Hourly Rate</label>
-                            </div>
-                            <div class="col-md-6">
-                                <p>10$/hr</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <label>Total Projects</label>
-                            </div>
-                            <div class="col-md-6">
-                                <p>230</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <label>English Level</label>
-                            </div>
-                            <div class="col-md-6">
-                                <p>Expert</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <label>Availability</label>
-                            </div>
-                            <div class="col-md-6">
-                                <p>6 months</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <label>Your Bio</label><br />
-                                <p>Your detail description</p>
-                            </div>
-                        </div>
+            </div> -->
+        </div>
+       
+        </div>
+    </div>
+
+    <!-- <div class="row" id="2">
+
+                <div class="col s12 m3">
+                  <div class="card-panel orange darken-1">
+                    <span class="white-text">I am a very simple card. I am good at containing small bits of information.
+                    I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+                    </span>
+                  </div>
+                </div>
+
+                <div class="col s12 m9">
+                    <div class="card-panel orange darken-1">
+                        <span class="white-text">I am a very simple card. I am good at containing small bits of information.
+                        I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+                        </span>
                     </div>
                 </div>
-            </div>
-        </div>
-    </form>
-</div>
+        
+        </div> -->
+
+</body>
+
+</html>
